@@ -100,4 +100,16 @@ func main() {
 	fmt.Println(heghit)
 	heghit-- //小数进行自增自减时会出现精度损耗
 	fmt.Println(heghit)
+
+	//关系运算(> >= < <=)
+	fmt.Println(1.1 > 1.2)
+	fmt.Println(1.1 >= 1.2)
+	fmt.Println(1.1 < 1.2)
+	fmt.Println(1.1 <= 1.2)
+	fmt.Println(1.2-1.1 <= 0.05)
+	//赋值(= += -= /= *=)
+	heghit += 0.05
+	fmt.Println(heghit)
+	fmt.Printf("%T %T\n",1.1,1.2)
+	fmt.Printf("%5.2f\n",heghit) //占5位，保留2位小数，如只要保留2位小数则填写%.2f
 }
